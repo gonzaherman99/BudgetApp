@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BudgetApp</title>
+
+		<link rel="stylesheet" href="index.css">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+	</head>
+	<body>
+
+		<div class='container-fluid'>
+			<div class='row'>
+				<div class='col-md-6'>
+					<div id='income'>
+						<form method='post' get='/income'>
+							<h3 class='titles'>Income</h3>
+							<div class='first-box'>
+								<h4 class='period'>Choose your income pay period</h4>
+	       			  				<select class='periodoptions' name='periods'>
+	    								<option value='Weekly'>Weekly</option>
+	    								<option value='Bi-Weekly'>Bi-Weekly</option>
+	    								<option value='Monthly'>Monthly</option>
+	   		 		  				</select>
+	   		 				</div>
+	   		 				<div class='second-box'>
+	    						<h4 class='income'>Typed amount earned for the period specified</h4>
+								<input type='text' name='income'>
+							</div>
+							<button type='submit' class='submit'>Submit</button>
+					    </form>
+					</div>
+				</div>
+
+				<div class='col-md-6'>
+					<div class='periods'>
+						<h1><%- period -%></h1>
+				    </div>
+					<div class='income'>
+                       <h2>Income</h2>
+                       <h3><%- incomeAmount -%></h3>
+					</div>
+					<div class='expenses'>
+						<h2>Expense</h2>
+
+						
+
+							<h4>Utilities</h4>
+
+							<h4>Groceries</h4>
+
+							<h4>Entertainment</h4>
+
+							<h4>Household</h4>
+							
+							<h4>Other</h4>
+								
+								<ul class='utilitiesI'>
+
+									<% UtilitiesE.forEach(function(item) {%>
+
+										<li><%- item -%></li>
+
+									<% }); %>
+
+								</ul>	
+
+								<p class='totalU'><%- totalU -%></p>
+									
+								
+								<ul class='groceriesI'>
+
+									<% GroceriesE.forEach(function(item) {%>
+
+										<li><%- item -%></li>
+
+									<% }); %>
+
+								</ul>
+
+								<p class='totalG'><%- totalG -%></p>
+
+								<ul class='entertainmentI'>
+
+									<% EntertainmentE.forEach(function(item) {%>
+								
+										<li><%- item -%></li>
+
+									<% }); %>
+
+								</ul>
+
+								<p class='totalE'><%- totalE -%></p>
+
+								<ul class='householdI'>
+
+									<% HouseholdE.forEach(function(item) {%>
+								
+										<li><%- item -%></li>
+
+									<% }); %>
+
+								</ul>
+
+								<p class='totalH'><%- totalH -%></p>
+
+								
+								<ul class='otherI'>
+								
+									<% OtherE.forEach(function(item) {%>
+
+										<li><%- item -%></li>
+
+									<% }); %>
+
+								</ul>
+
+								<p class='totalO'><%- totalO -%></p>
+
+						
+					</div>
+					<div class='flow'>
+						<h2>CashFlow</h2>
+					
+							<h3><%- cashflow -%></h3>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='container-fluid'>
+			<div class='row'>	
+				<div class='col-md-6'>
+					<div id='expense'>
+						<form method='post' get='/expenses'>
+							<h3 class='titles'>Expense</h3>
+							<div class='first-box-spend'>
+								<h4 class='title-spend'>Choose the expense category</h4>
+									<select class='periodoptions' name='etype'>
+	    								<option value='Utilities'>Utilities</option>
+	    								<option value='Groceries'>Groceries</option>
+	    								<option value='Entertainment'>Entertainment</option>
+	    								<option value='Household'>Household</option>
+	    								<option value='Other'>Other</option>
+	   		 		 				</select>
+	   		 				</div>
+	   		 				<div class='second-box-spend'>
+	   		 		 			<h4 class='qtyspend'>Typed the amout spent</h4>
+	   		 		 			<input type='text' class='amountspend' name='expenses'>
+	   		 				</div>
+	   		 				<button type='submit' class='submit'>Submit</button>
+	   		 		    </form>
+	   		 		</div>
+	   		    </div>
+	   		</div>
+		</div>
+
+
+		
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+</html>

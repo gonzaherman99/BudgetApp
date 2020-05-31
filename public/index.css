@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+h3.titles {
+	text-align: center;
+}
+body {
+	font-family: sans-serif !important;
+	background-color:  #e6b6a1 !important;
+}
+select {
+	border-radius: 10px;
+	text-align: center;
+}
+button {
+	border-radius: 10px !important;
+}
+div.first-box {
+	margin: 30px;
+	text-align: center;
+}
+select.periodoptions {
+	margin-left: 15px;
+}
+h4.period, select.periodoptions {
+	display: inline;
+}
+div.second-box	{
+	text-align: center;
+}
+input[type='text']	{
+	margin-left: 15px;
+	padding: 0px !important;
+	border-radius: 10px;
+}
+h3.titles {
+	font-family: 'Chelsea Market', cursive;
+}
+h4.income, input[type='text'] {
+	display: inline;
+	margin-top: 5px;
+}
+button.submit {
+	display: block;
+	margin: 35px auto;
+}
+div.first-box-spend {
+	margin: 30px;
+	text-align: center;
+}
+h4.title-spend {
+	display: inline;
+}
+h4.qtyspend {
+	display: inline;
+}
+div.second-box-spend 	{
+	text-align: center;
+}
+div#income {
+	margin-top: 50px;
+	background-color: green;
+	padding: 20px;
+}
+div#expense {
+	margin-top: -230px;
+	background-color: red;
+	padding: 20px;
+}
+div.periods {
+	position: absolute;
+	margin-left: 40%;
+	margin-top: 30px;
+	font-family: 'Chelsea Market', cursive;
+}
+div.income h2 {
+	text-align: right;
+	margin-top: 120px;
+	font-family: 'Chelsea Market', cursive;
+}
+div.income h3 {
+	text-align: center;
+	position: absolute;
+	margin-left: 45%;
+	color: green;
+	margin-top: 20px;
+}
+div.expenses h4{
+	display: inline !important;
+	margin: 45px 15px 0 15px;
+}
+div.expenses h2 {
+	text-align: left;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-family: 'Chelsea Market', cursive;
+}
+ul li {
+	list-style-type: none;
+	text-align: center;
+}
+ul.utilitiesI {
+	position: absolute;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+p.totalU {
+	position: absolute;
+	 margin-top: 150px;
+	 margin-left: 40px;
+	  font-weight: 700;
+	 font-size: 1.3em;
+	 color: red;
+}
+ul.groceriesI  {
+	position: absolute;
+  margin-left: 130px;
+}
+p.totalG {
+	position: absolute;
+	 margin-top: 150px;
+	 margin-left: 175px;
+	  font-weight: 700;
+	 font-size: 1.3em;
+	 color: red;
+}
+ul.entertainmentI {
+	position: absolute;
+	 margin-left: 300px;
+}
+p.totalE {
+	position: absolute;
+	 margin-top: 150px;
+	 margin-left: 345px;
+	  font-weight: 700;
+	 font-size: 1.3em;
+	 color: red;
+}
+ul.householdI {
+	position: absolute;
+	 margin-left: 460px;
+}
+
+p.totalH {
+	position: absolute;
+	 margin-top: 150px;
+	 margin-left: 510px;
+	  font-weight: 700;
+	 font-size: 1.3em;
+	 color: red;
+}
+ul.otherI {
+	position: absolute;
+	 margin-left: 580px;
+}
+p.totalO {
+	position: absolute;
+	 margin-top: 150px;
+	 margin-left: 637px;
+	 font-weight: 700;
+	font-size: 1.3em;
+	color: red;
+}
+div.flow {
+	text-align: center;
+}
+div.flow h2 {
+	margin-top: 200px;
+	font-family: 'Chelsea Market', cursive;
+}
+div.flow h3 {
+	margin-top: 20px;
+	position: absolute;
+	margin-left: 44%;
+}

@@ -37,7 +37,6 @@ const objectT = {
 app.get('/', function(req, res) {
 
 
-
 function reduceE(param, param2, param3) {
 
 
@@ -143,6 +142,6 @@ app.post('/', function(req, res) {
 	res.redirect('/');
 });
 
-app.listen(3000, function(req, res) {
+app.listen(process.env.PORT || 3000, function(req, res) {
 	console.log('Server listening in port 3000');
 });
